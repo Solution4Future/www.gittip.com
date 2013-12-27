@@ -5,7 +5,7 @@ describe('Test the homepage', function () {
 
     beforeEach(function (done) {
         $iframe.attr('src', '/')
-            .one('load', function() {
+            .on('load', function() {
                 $body = $(this.contentDocument.body);
                 done();
             });
